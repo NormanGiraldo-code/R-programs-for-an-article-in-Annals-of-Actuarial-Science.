@@ -1,0 +1,26 @@
+#--------programa  2. Anualidades de vida calcula Cp Ct
+
+source("funciones.anualidades.vida.r")
+
+source("funciones.anualidades.km.rp.r")
+
+
+#--------parametros de la anualidad
+
+
+delta = 0.06
+i = exp(delta)-1
+v = 1/(1+i)
+
+q = 1
+r = 12  #rq=m
+im = (1+i)^(1/m)-1
+iq = 0.02 # incremento inflacion anual
+C = 12.0  # mill x año
+
+x = 62; omega = 110; 
+m = 12
+T = omega-x
+n =T*m
+tx = seq(0,T-1/m,1/m)
+length(tx)
